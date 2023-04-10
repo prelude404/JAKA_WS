@@ -1,0 +1,2 @@
+Zu7:industrial_trajectory_filters:jaka_moveit_action:jakazu7_moveit_test_config
+-DCATKIN_DEVEL_PREFIX=/home/joy/jaka_ws/devel -DCMAKE_INSTALL_PREFIX=/home/joy/jaka_ws/install -G Unix Makefiles

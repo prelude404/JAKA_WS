@@ -1,0 +1,8 @@
+prefix=/home/joy/jaka_ws/devel
+
+Name: jaka_moveit_action
+Description: Description of jaka_moveit_action
+Version: 0.0.0
+Cflags: -I/home/joy/jaka_ws/devel/include -I/home/joy/jaka_ws/src/jaka_moveit_action/include
+Libs: -L${prefix}/lib -ljaka_moveit_action
+Requires: actionlib actionlib_msgs roscpp rospy std_msgs message_generation sensor_msgs message_runtime

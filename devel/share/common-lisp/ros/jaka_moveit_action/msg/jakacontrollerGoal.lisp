@@ -1,0 +1,107 @@
+; Auto-generated. Do not edit!
+
+
+(cl:in-package jaka_moveit_action-msg)
+
+
+;//! \htmlinclude jakacontrollerGoal.msg.html
+
+(cl:defclass <jakacontrollerGoal> (roslisp-msg-protocol:ros-message)
+  ((point_count
+    :reader point_count
+    :initarg :point_count
+    :type cl:fixnum
+    :initform 0)
+   (robot_goal
+    :reader robot_goal
+    :initarg :robot_goal
+    :type (cl:vector cl:float)
+   :initform (cl:make-array 0 :element-type 'cl:float :initial-element 0.0)))
+)
+
+(cl:defclass jakacontrollerGoal (<jakacontrollerGoal>)
+  ())
+
+(cl:defmethod cl:initialize-instance :after ((m <jakacontrollerGoal>) cl:&rest args)
+  (cl:declare (cl:ignorable args))
+  (cl:unless (cl:typep m 'jakacontrollerGoal)
+    (roslisp-msg-protocol:msg-deprecation-warning "using old message class name jaka_moveit_action-msg:<jakacontrollerGoal> is deprecated: use jaka_moveit_action-msg:jakacontrollerGoal instead.")))
+
+(cl:ensure-generic-function 'point_count-val :lambda-list '(m))
+(cl:defmethod point_count-val ((m <jakacontrollerGoal>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader jaka_moveit_action-msg:point_count-val is deprecated.  Use jaka_moveit_action-msg:point_count instead.")
+  (point_count m))
+
+(cl:ensure-generic-function 'robot_goal-val :lambda-list '(m))
+(cl:defmethod robot_goal-val ((m <jakacontrollerGoal>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader jaka_moveit_action-msg:robot_goal-val is deprecated.  Use jaka_moveit_action-msg:robot_goal instead.")
+  (robot_goal m))
+(cl:defmethod roslisp-msg-protocol:serialize ((msg <jakacontrollerGoal>) ostream)
+  "Serializes a message object of type '<jakacontrollerGoal>"
+  (cl:let* ((signed (cl:slot-value msg 'point_count)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 65536) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    )
+  (cl:let ((__ros_arr_len (cl:length (cl:slot-value msg 'robot_goal))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_arr_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_arr_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (ele) (cl:let ((bits (roslisp-utils:encode-single-float-bits ele)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream)))
+   (cl:slot-value msg 'robot_goal))
+)
+(cl:defmethod roslisp-msg-protocol:deserialize ((msg <jakacontrollerGoal>) istream)
+  "Deserializes a message object of type '<jakacontrollerGoal>"
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'point_count) (cl:if (cl:< unsigned 32768) unsigned (cl:- unsigned 65536))))
+  (cl:let ((__ros_arr_len 0))
+    (cl:setf (cl:ldb (cl:byte 8 0) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 8) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 16) __ros_arr_len) (cl:read-byte istream))
+    (cl:setf (cl:ldb (cl:byte 8 24) __ros_arr_len) (cl:read-byte istream))
+  (cl:setf (cl:slot-value msg 'robot_goal) (cl:make-array __ros_arr_len))
+  (cl:let ((vals (cl:slot-value msg 'robot_goal)))
+    (cl:dotimes (i __ros_arr_len)
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:aref vals i) (roslisp-utils:decode-single-float-bits bits))))))
+  msg
+)
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<jakacontrollerGoal>)))
+  "Returns string type for a message object of type '<jakacontrollerGoal>"
+  "jaka_moveit_action/jakacontrollerGoal")
+(cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql 'jakacontrollerGoal)))
+  "Returns string type for a message object of type 'jakacontrollerGoal"
+  "jaka_moveit_action/jakacontrollerGoal")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<jakacontrollerGoal>)))
+  "Returns md5sum for a message object of type '<jakacontrollerGoal>"
+  "1267157bce955f9c70f78d5247a3d8c7")
+(cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'jakacontrollerGoal)))
+  "Returns md5sum for a message object of type 'jakacontrollerGoal"
+  "1267157bce955f9c70f78d5247a3d8c7")
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<jakacontrollerGoal>)))
+  "Returns full string definition for message of type '<jakacontrollerGoal>"
+  (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%# Define the goal~%int16 point_count~%float32[] robot_goal~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'jakacontrollerGoal)))
+  "Returns full string definition for message of type 'jakacontrollerGoal"
+  (cl:format cl:nil "# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======~%# Define the goal~%int16 point_count~%float32[] robot_goal~%~%~%"))
+(cl:defmethod roslisp-msg-protocol:serialization-length ((msg <jakacontrollerGoal>))
+  (cl:+ 0
+     2
+     4 (cl:reduce #'cl:+ (cl:slot-value msg 'robot_goal) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))
+))
+(cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <jakacontrollerGoal>))
+  "Converts a ROS message object to a list"
+  (cl:list 'jakacontrollerGoal
+    (cl:cons ':point_count (point_count msg))
+    (cl:cons ':robot_goal (robot_goal msg))
+))

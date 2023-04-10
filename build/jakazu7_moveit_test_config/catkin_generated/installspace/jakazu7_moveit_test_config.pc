@@ -1,0 +1,8 @@
+prefix=/home/joy/jaka_ws/install
+
+Name: jakazu7_moveit_test_config
+Description: Description of jakazu7_moveit_test_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
