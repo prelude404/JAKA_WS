@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+jaka_moveit_action/CMakeFiles/arm_control.dir/rule:
+	cd /home/joy/jaka_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jaka_moveit_action/CMakeFiles/arm_control.dir/rule
+.PHONY : jaka_moveit_action/CMakeFiles/arm_control.dir/rule
+
+# Convenience name for target.
+arm_control: jaka_moveit_action/CMakeFiles/arm_control.dir/rule
+
+.PHONY : arm_control
+
+# fast build rule for target.
+arm_control/fast:
+	cd /home/joy/jaka_ws/build && $(MAKE) -f jaka_moveit_action/CMakeFiles/arm_control.dir/build.make jaka_moveit_action/CMakeFiles/arm_control.dir/build
+.PHONY : arm_control/fast
+
+# Convenience name for target.
 jaka_moveit_action/CMakeFiles/trajectory_action_server.dir/rule:
 	cd /home/joy/jaka_ws/build && $(MAKE) -f CMakeFiles/Makefile2 jaka_moveit_action/CMakeFiles/trajectory_action_server.dir/rule
 .PHONY : jaka_moveit_action/CMakeFiles/trajectory_action_server.dir/rule
@@ -2132,6 +2147,33 @@ tf2_msgs_generate_messages_eus/fast:
 	cd /home/joy/jaka_ws/build && $(MAKE) -f jaka_moveit_action/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make jaka_moveit_action/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
+src/arm_control.o: src/arm_control.cpp.o
+
+.PHONY : src/arm_control.o
+
+# target to build an object file
+src/arm_control.cpp.o:
+	cd /home/joy/jaka_ws/build && $(MAKE) -f jaka_moveit_action/CMakeFiles/arm_control.dir/build.make jaka_moveit_action/CMakeFiles/arm_control.dir/src/arm_control.cpp.o
+.PHONY : src/arm_control.cpp.o
+
+src/arm_control.i: src/arm_control.cpp.i
+
+.PHONY : src/arm_control.i
+
+# target to preprocess a source file
+src/arm_control.cpp.i:
+	cd /home/joy/jaka_ws/build && $(MAKE) -f jaka_moveit_action/CMakeFiles/arm_control.dir/build.make jaka_moveit_action/CMakeFiles/arm_control.dir/src/arm_control.cpp.i
+.PHONY : src/arm_control.cpp.i
+
+src/arm_control.s: src/arm_control.cpp.s
+
+.PHONY : src/arm_control.s
+
+# target to generate assembly for a file
+src/arm_control.cpp.s:
+	cd /home/joy/jaka_ws/build && $(MAKE) -f jaka_moveit_action/CMakeFiles/arm_control.dir/build.make jaka_moveit_action/CMakeFiles/arm_control.dir/src/arm_control.cpp.s
+.PHONY : src/arm_control.cpp.s
+
 src/trajectort_server.o: src/trajectort_server.cpp.o
 
 .PHONY : src/trajectort_server.o
@@ -2249,6 +2291,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... list_install_components"
+	@echo "... arm_control"
 	@echo "... trajectory_action_server"
 	@echo "... jaka_moveit_action_genpy"
 	@echo "... jaka_moveit_action_generate_messages_py"
@@ -2384,6 +2427,9 @@ help:
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... src/arm_control.o"
+	@echo "... src/arm_control.i"
+	@echo "... src/arm_control.s"
 	@echo "... src/trajectort_server.o"
 	@echo "... src/trajectort_server.i"
 	@echo "... src/trajectort_server.s"

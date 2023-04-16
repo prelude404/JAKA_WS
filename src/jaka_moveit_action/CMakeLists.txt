@@ -187,6 +187,10 @@ add_executable(trajectory_planning src/trajectory_planning.cpp)
 target_link_libraries(trajectory_planning ${catkin_LIBRARIES})
 add_dependencies(trajectory_planning ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_executable(arm_control src/arm_control.cpp)
+target_link_libraries(arm_control ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so)
+add_dependencies(arm_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 

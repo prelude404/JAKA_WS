@@ -60,6 +60,7 @@ jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cp
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/BoundingVolume.h
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/CollisionObject.h
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/Constraints.h
+jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/DisplayTrajectory.h
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/Grasp.h
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/GripperTranslation.h
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: /opt/ros/melodic/include/moveit_msgs/JointConstraint.h

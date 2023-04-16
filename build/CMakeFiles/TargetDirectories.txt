@@ -38,6 +38,7 @@
 /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/install/strip.dir
 /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/install/local.dir
 /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/list_install_components.dir
+/home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/arm_control.dir
 /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/trajectory_action_server.dir
 /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/jaka_moveit_action_genpy.dir
 /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_py.dir

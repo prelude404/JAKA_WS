@@ -4,6 +4,7 @@
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <moveit_msgs/AttachedCollisionObject.h>
 #include <moveit_msgs/CollisionObject.h>
+#include <moveit_msgs/DisplayTrajectory.h>
 #include <tf2/LinearMath/Quaternion.h>
 #include <vector>
 #include <string>
@@ -13,6 +14,8 @@
 using namespace std;
 
 const double pi = 3.141592653589793;
+
+ros::Publisher disp_traj_pub;
 
 // ros::Publisher end_pose;
 // we can get the pose of end_link using TF Tree
@@ -49,10 +52,10 @@ public:
 		arm_->setPlannerId("TRRT");
 
 		
-		go_home();// 回到向上状态
+		// go_home();// 回到向上状态
 
 		
-		create_table();
+		// create_table();
 
 	}	
 
@@ -340,7 +343,16 @@ public:
 
 		planning_scene.world.collision_objects.push_back(collision_object);
 		planning_scene.is_diff = true;
-		planning_scene_diff_publisher.publish(planning_scene);
+
+		ros::Time table_time = ros::Time::now();
+
+		// 只发送一次可能无法成功添加table
+		while((ros::Time::now()-table_time).toSec()<0.5)
+		{
+			planning_scene_diff_publisher.publish(planning_scene);
+		}
+		
+		// planning_scene_diff_publisher.publish(planning_scene);
 
 		ROS_INFO("Add an table into the world");
 
@@ -348,9 +360,28 @@ public:
 		moveit_msgs::Constraints table_constraints = arm_->getPathConstraints();
 		arm_->setPathConstraints(table_constraints); // Work!!!
 		// arm_->setPathConstraints("table"); // Doesn't work
-        
+
 	}
-    
+
+	void set_target(const vector<double> pose){
+		geometry_msgs::Pose target_pose;
+		target_pose.position.x = pose[0];
+		target_pose.position.y = pose[1];
+		target_pose.position.z = pose[2];
+
+		
+		tf2::Quaternion myQuaternion;
+		myQuaternion.setRPY(pose[3], pose[4], pose[5]);
+		target_pose.orientation.x = myQuaternion.getX();
+		target_pose.orientation.y = myQuaternion.getY();
+		target_pose.orientation.z = myQuaternion.getZ();
+		target_pose.orientation.w = myQuaternion.getW();
+
+		
+		arm_->setStartStateToCurrentState();
+		arm_->setPoseTarget(target_pose);
+	}
+
 	void some_functions_maybe_useful(){
 		// moveit::planning_interface::MoveGroupInterface arm("manipulator");
 
@@ -402,21 +433,88 @@ int main(int argc, char** argv) {
 	
 	MoveIt_Control moveit_server(nh,arm,PLANNING_GROUP);
 
-	vector<double> pickup_pose = {0.6,0.4,0.2,-pi,0,0};
-	vector<double> middle_pose = {0.4,0,0.4,-pi,0,0};
-	vector<double> place_pose = {0.6,-0.4,0.2,-pi,0,0};
-	moveit_server.move_p(pickup_pose);
-	sleep(1.0);
-	moveit_server.move_p(middle_pose);
-	moveit_server.move_p(place_pose);
-	sleep(1.0);
-	moveit_server.go_home();
+	vector<double> pick_pose = {0.6,0.4,0.1,-pi,0,0};
+	vector<double> middle_pose = {0.6,0,0.3,-pi,0,0};
+	vector<double> place_pose = {0.6,-0.4,0.1,-pi,0,0};
 
 
+
+	// // Reciprocating Motion
+	// moveit_server.move_p(pick_pose);
+	// bool pick_place = true;
+	// ros::Time start_time = ros::Time::now();
 	// while(ros::ok())
 	// {
-	// 	//机械臂的往复运动！！
+	// 	if(pick_place)
+	// 	{
+	// 		moveit_server.set_target(middle_pose);
+	// 		moveit::planning_interface::MoveGroupInterface::Plan plan_test;
+	// 		moveit_server.arm_->plan(plan_test);
+	// 		moveit_server.arm_->execute(plan_test);
+	// 		// std::vector<trajectory_msgs::JointTrajectoryPoint> print_plan = 
+	// 		// plan_test.trajectory_.joint_trajectory.points.data();
+	// 		// cout << print_plan;
+	// 		// moveit_server.move_p(middle_pose);
+	// 		moveit_server.move_p(place_pose);
+	// 		// Obstacle Avoidance
+	// 		pick_place = !pick_place;
+	// 	}
+	// 	else if (!pick_place)
+	// 	{
+	// 		moveit_server.move_p(middle_pose);
+	// 		moveit_server.move_p(pick_pose);
+	// 		// Obstacle Avoidance
+	// 		pick_place = !pick_place;
+	// 	}
+
+	// 	ROS_INFO("pick and place time: %f",(ros::Time::now()-start_time).toSec());
+
+	// 	// if((ros::Time::now()-start_time).toSec() > 30.0)
+	// 	// {
+	// 	// 	moveit_server.go_home();
+	// 	// 	break;
+	// 	// }
 	// }
+
+	// Single Point Control (Publish"/move_group/display_path")
+	// disp_traj_pub = nh.advertise<moveit_msgs::DisplayTrajectory>("/move_group/display_planned_path",10);
+	// ros::Rate rt(1000.0);
+
+	// Only Plan reciprocating motion
+	bool pick_place = true;
+	moveit::planning_interface::MoveGroupInterface::Plan plan_test;
+	while(ros::ok())
+	{
+		if(pick_place)
+		{
+			moveit_server.set_target(middle_pose);
+			moveit_server.arm_->plan(plan_test);
+			ros::Duration(20.0).sleep();
+			moveit_server.set_target(pick_pose);
+			moveit_server.arm_->plan(plan_test);
+			ros::Duration(20.0).sleep();
+			pick_place = !pick_place;
+		}
+		else if (!pick_place)
+		{
+			moveit_server.set_target(middle_pose);
+			moveit_server.arm_->plan(plan_test);
+			moveit_server.set_target(place_pose);
+			moveit_server.arm_->plan(plan_test);
+			pick_place = !pick_place;
+		}
+	}
+	// moveit_msgs::DisplayTrajectory disp_traj;
+	// disp_traj.trajectory.push_back(plan_test.trajectory_);
+
+	// ros::Time start_t = ros::Time::now();
+	// while(ros::ok())
+	// {
+	// 	disp_traj_pub.publish(disp_traj);
+	// 	rt.sleep();
+	// }
+
+
 
 	// // Original Test 
 

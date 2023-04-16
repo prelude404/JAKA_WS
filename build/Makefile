@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named arm_control
+
+# Build rule for target.
+arm_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arm_control
+.PHONY : arm_control
+
+# fast build rule for target.
+arm_control/fast:
+	$(MAKE) -f jaka_moveit_action/CMakeFiles/arm_control.dir/build.make jaka_moveit_action/CMakeFiles/arm_control.dir/build
+.PHONY : arm_control/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_action_server
 
 # Build rule for target.
@@ -2230,6 +2243,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... arm_control"
 	@echo "... trajectory_action_server"
 	@echo "... jaka_moveit_action_genpy"
 	@echo "... jaka_moveit_action_generate_messages_py"

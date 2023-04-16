@@ -26,8 +26,8 @@ typedef actionlib::SimpleActionClient<jaka_moveit_action::jakacontrollerAction> 
 
 jaka_moveit_action::jakacontrollerGoal goal;
 
-bool Trajectory_Series_Flag = false;
-bool Trajectory_Series_End = false;
+bool Trajectory_Series_Flag = false; //收到规划路径
+bool Trajectory_Series_End = false; //完成规划路径
 
 ros::Publisher start_state_pub;
  
@@ -42,7 +42,7 @@ void doneCb(const actionlib::SimpleClientGoalState& state,
 
     //Robot_State_Thread_Flag = false;
 
-    ros::shutdown();
+    // ros::shutdown();
 }
 
 // 当action激活后会调用次回调函数一次
@@ -113,6 +113,7 @@ void trajectoryCallback(const moveit_msgs::DisplayTrajectory& path)
     goal.point_count = point_num;
     //std::cout << path.trajectory.joint_trajectory;
     Trajectory_Series_Flag = true;
+    ROS_INFO("Read trajectory successfully!!!");
 
     //ros::spin();
     
@@ -173,52 +174,61 @@ int main(int argc, char** argv)
     long time = 0;
     int time_limit = 10000;//timespan limit (unit: ms)
 
-    //waiting for trajectory
-    while(1)
+    while(ros::ok())
     {
-        time = (ros::WallTime::now() - startr).toSec()*1000;
-        if(time > time_limit)
+        //waiting for trajectory
+        while(!Trajectory_Series_Flag)
         {
-            std::cout << "Cannot recieve trajectory, please check!" << std::endl;
-            return -1;
+            time = (ros::WallTime::now() - startr).toSec()*1000;
+            if(time > time_limit)
+            {
+                std::cout << "Cannot recieve trajectory, please check!" << std::endl;
+                return -1;
+            }
+
+            // if(Trajectory_Series_Flag)
+            // {
+            //     break;
+            // }
+
+            //trajectory_sub = n.subscribe("/move_group/display_planned_path",1000,trajectoryCallback);
+            //std::cout << Trajectory_Series_Flag << std::endl;
+            ros::spinOnce();
+            
         }
 
-        if(Trajectory_Series_Flag)
-        {
-            break;
-        }
-
-        //trajectory_sub = n.subscribe("/move_group/display_planned_path",1000,trajectoryCallback);
-        //std::cout << Trajectory_Series_Flag << std::endl;
-        ros::spinOnce();
-        
-    }
-
-
- 
-    // 创建一个action的goal
- 
+        Trajectory_Series_Flag = false;
     
-    // 等待服务器端
-    ROS_INFO("Waiting for action server to start.");
-    client.waitForServer();
+        // 创建一个action的goal
+    
+        
+        // 等待服务器端
+        ROS_INFO("Waiting for action server to start.");
+        client.waitForServer();
 
-    ROS_INFO("Action server started, sending goal.");
-    //std::cout << goal << std::endl;
-    /*std::cout << Robot_Connect_Flag << std::endl;
-    if(Robot_Connect_Flag)
-    {
-        pthread_t robot_pose;
-        Robot_State_Thread_Flag = true;
-        pthread_create(&robot_pose, NULL, Robot_State_Thread, NULL);
-    }*/
+        ROS_INFO("Action server started, sending goal.");
+        //std::cout << goal << std::endl;
+        /*std::cout << Robot_Connect_Flag << std::endl;
+        if(Robot_Connect_Flag)
+        {
+            pthread_t robot_pose;
+            Robot_State_Thread_Flag = true;
+            pthread_create(&robot_pose, NULL, Robot_State_Thread, NULL);
+        }*/
 
-    // 发送action的goal给服务器端，并且设置回调函数
-    client.sendGoal(goal,  &doneCb, &activeCb, &feedbackCb);
+        // 发送action的goal给服务器端，并且设置回调函数
+        client.sendGoal(goal,  &doneCb, &activeCb, &feedbackCb);
+        while(!Trajectory_Series_End)
+        {
+            ros::spinOnce();
+        }
+
+        Trajectory_Series_End = false;
+    }
     //ros::spinOnce();
 
  
-    ros::spin();
+    // ros::spin();
  
     return 0;
 }
