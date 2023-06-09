@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectory_planning"
+  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectory_planning.pdb"
   "CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o"
-  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectory_planning.pdb"
-  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectory_planning"
+  "CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

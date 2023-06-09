@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h
 libs/robot.h
-/home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action/libs/robot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action/libs/robot.h
 sensor_msgs/JointState.h
 -
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/arm_control.cpp
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/arm_control.cpp
 ros/ros.h
 -
 moveit/move_group_interface/move_group_interface.h
@@ -42,37 +42,37 @@ thread
 std_msgs/Empty.h
 -
 jaka_moveit.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/jaka_moveit.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/jaka_moveit.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
 jkerr.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 jktypes.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 stdio.h
 -
 string
 -
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jakaAPI.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jakaAPI.h
 jkerr.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 jktypes.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/robot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/robot.h
 JAKAZuRobot.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
 jakaAPI.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jakaAPI.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jakaAPI.h
 jkerr.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 jktypes.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 
 /opt/ros/melodic/include/actionlib/action_definition.h
 

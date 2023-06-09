@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerAction.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ jaka_moveit_action/jakacontrollerActionResult.h
 jaka_moveit_action/jakacontrollerActionFeedback.h
 -
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerActionFeedback.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 jaka_moveit_action/jakacontrollerFeedback.h
 -
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerActionGoal.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 jaka_moveit_action/jakacontrollerGoal.h
 -
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerActionResult.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 jaka_moveit_action/jakacontrollerResult.h
 -
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerFeedback.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerFeedback.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerGoal.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerResult.h
+/home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerResult.h
 string
 -
 vector
@@ -142,43 +142,43 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h
 libs/robot.h
-/home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action/libs/robot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action/libs/robot.h
 sensor_msgs/JointState.h
 -
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
 jkerr.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 jktypes.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 stdio.h
 -
 string
 -
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jakaAPI.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jakaAPI.h
 jkerr.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 jktypes.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/robot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/robot.h
 JAKAZuRobot.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/JAKAZuRobot.h
 jakaAPI.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jakaAPI.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jakaAPI.h
 jkerr.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h
 jktypes.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/trajectort_server.cpp
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectort_server.cpp
 ros/ros.h
 -
 stdlib.h
@@ -204,19 +204,19 @@ control_msgs/FollowJointTrajectoryAction.h
 actionlib/server/simple_action_server.h
 -
 jaka_moveit_action/jakacontrollerAction.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/jaka_moveit_action/jakacontrollerAction.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/jaka_moveit_action/jakacontrollerAction.h
 moveit_msgs/DisplayTrajectory.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/moveit_msgs/DisplayTrajectory.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/moveit_msgs/DisplayTrajectory.h
 moveit_msgs/RobotTrajectory.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/moveit_msgs/RobotTrajectory.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/moveit_msgs/RobotTrajectory.h
 trajectory_msgs/JointTrajectory.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_msgs/JointTrajectory.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_msgs/JointTrajectory.h
 std_msgs/Empty.h
 -
 jaka_moveit_action/jakacontrollerAction.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/jaka_moveit_action/jakacontrollerAction.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/jaka_moveit_action/jakacontrollerAction.h
 jaka_moveit.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/jaka_moveit.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/jaka_moveit.h
 
 /opt/ros/melodic/include/actionlib/action_definition.h
 

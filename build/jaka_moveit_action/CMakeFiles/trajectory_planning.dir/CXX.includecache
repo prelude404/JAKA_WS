@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_planning.cpp
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_planning.cpp
 ros/ros.h
 -
 moveit/move_group_interface/move_group_interface.h

@@ -3,11 +3,15 @@ project(jaka_moveit_action)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 add_compile_options(-std=c++11)
-
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+#set(FCL  "/usr/local/lib/cmake")
+set(FCL_DIR "/usr/local/lib/cmake/fcl")
+ 
+#list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/cmake") # 安装路径前缀
 find_package(catkin REQUIRED COMPONENTS
+  FCL REQUIRED
   actionlib
   actionlib_msgs
   control_msgs 
@@ -20,6 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   sensor_msgs
   shape_msgs
+  visualization_msgs
   std_msgs
   std_srvs
   tf
@@ -135,8 +140,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   src/libs
   src
+  ${FCL_INCLUDE_DIRS}
 )
-
+#link_libraries("/usr/local/lib/libfcl.so.0.7.0" "/usr/local/lib/libfcl.so.0.7" "/usr/local/lib/libfcl.so")
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/jaka_moveit_action.cpp
@@ -170,6 +176,26 @@ include_directories(
 #############
 ## Install ##
 #############
+add_executable(OctomapGene src/OctomapGene.cpp)
+target_link_libraries(OctomapGene ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so  ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7.0 ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7)
+add_dependencies(OctomapGene ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(pathSearching src/libs/RRT.h src/pathSearching.cpp src/RRT.cpp )
+target_link_libraries(pathSearching ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so  ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7.0 ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7)
+add_dependencies(pathSearching ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_executable(trajectoryGene src/libs/RRT.h src/trajectoryGene.cpp src/RRT.cpp )
+target_link_libraries(trajectoryGene ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so  ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7.0 ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7)
+add_dependencies(trajectoryGene ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_executable(arm_control src/libs/RRT.h src/arm_control.cpp src/RRT.cpp )
+target_link_libraries(arm_control ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so  ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7.0 ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7)
+add_dependencies(arm_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_executable(testRRT src/libs/RRT.h src/testRRT.cpp src/RRT.cpp )
+target_link_libraries(testRRT ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so  ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7.0 ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7)
+add_dependencies(testRRT ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(testFcl src/testFcl.cpp)
+target_link_libraries(testFcl ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so  ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7.0 ${PROJECT_SOURCE_DIR}/src/libs/libfcl.so.0.7)
+add_dependencies(testFcl ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 add_executable(trajectory_display src/trajectory_display.cpp)
 target_link_libraries(trajectory_display ${QT_LIBRARIES} ${catkin_LIBRARIES})
@@ -187,9 +213,7 @@ add_executable(trajectory_planning src/trajectory_planning.cpp)
 target_link_libraries(trajectory_planning ${catkin_LIBRARIES})
 add_dependencies(trajectory_planning ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-add_executable(arm_control src/arm_control.cpp)
-target_link_libraries(arm_control ${catkin_LIBRARIES} ${PROJECT_SOURCE_DIR}/src/libs/libjakaAPI.so)
-add_dependencies(arm_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html

@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js"
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js"
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js"
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js"
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js"
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js"
+  "/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js"
   "CMakeFiles/jaka_moveit_action_generate_messages_nodejs"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js"
-  "/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js"
 )
 
 # Per-language clean rules from dependency scanning.

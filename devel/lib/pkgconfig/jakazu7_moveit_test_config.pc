@@ -1,4 +1,4 @@
-prefix=/home/joy/jaka_ws/devel
+prefix=/home/joy/JAKA_WS/devel
 
 Name: jakazu7_moveit_test_config
 Description: Description of jakazu7_moveit_test_config

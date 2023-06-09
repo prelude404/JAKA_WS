@@ -1,4 +1,4 @@
-prefix=/home/joy/jaka_ws/install
+prefix=/home/joy/JAKA_WS/install
 
 Name: jaka_moveit_action
 Description: Description of jaka_moveit_action

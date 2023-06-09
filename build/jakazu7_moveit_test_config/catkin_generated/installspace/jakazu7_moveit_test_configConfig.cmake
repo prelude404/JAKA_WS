@@ -67,14 +67,14 @@ set(jakazu7_moveit_test_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(jakazu7_moveit_test_config_SOURCE_PREFIX /home/joy/jaka_ws/src/jakazu7_moveit_test_config)
-  set(jakazu7_moveit_test_config_DEVEL_PREFIX /home/joy/jaka_ws/devel)
+  set(jakazu7_moveit_test_config_SOURCE_PREFIX /home/joy/JAKA_WS/src/jakazu7_moveit_test_config)
+  set(jakazu7_moveit_test_config_DEVEL_PREFIX /home/joy/JAKA_WS/devel)
   set(jakazu7_moveit_test_config_INSTALL_PREFIX "")
   set(jakazu7_moveit_test_config_PREFIX ${jakazu7_moveit_test_config_DEVEL_PREFIX})
 else()
   set(jakazu7_moveit_test_config_SOURCE_PREFIX "")
   set(jakazu7_moveit_test_config_DEVEL_PREFIX "")
-  set(jakazu7_moveit_test_config_INSTALL_PREFIX /home/joy/jaka_ws/install)
+  set(jakazu7_moveit_test_config_INSTALL_PREFIX /home/joy/JAKA_WS/install)
   set(jakazu7_moveit_test_config_PREFIX ${jakazu7_moveit_test_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/joy/jaka_ws/install/lib;/home/joy/octomap_ws/devel/lib;/home/joy/jaka_ws/devel/lib;/home/joy/mavros_ws/devel/lib;/home/joy/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/joy/JAKA_WS/install/lib;/home/joy/JAKA_WS/devel/lib;/home/joy/OCTOMAP_WS/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

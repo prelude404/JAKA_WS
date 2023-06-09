@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
+  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/arm_control"
+  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/arm_control.pdb"
+  "CMakeFiles/arm_control.dir/src/RRT.cpp.o"
+  "CMakeFiles/arm_control.dir/src/RRT.cpp.o.d"
   "CMakeFiles/arm_control.dir/src/arm_control.cpp.o"
-  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/arm_control.pdb"
-  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/arm_control"
+  "CMakeFiles/arm_control.dir/src/arm_control.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

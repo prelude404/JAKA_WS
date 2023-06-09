@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
+  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectory_action_client"
+  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectory_action_client.pdb"
   "CMakeFiles/trajectory_action_client.dir/src/trajectory_client.cpp.o"
-  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectory_action_client.pdb"
-  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectory_action_client"
+  "CMakeFiles/trajectory_action_client.dir/src/trajectory_client.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

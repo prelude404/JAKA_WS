@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_display.cpp
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_display.cpp
 ros/ros.h
 -
 stdlib.h
@@ -28,11 +28,11 @@ actionlib/server/simple_action_server.h
 control_msgs/FollowJointTrajectoryAction.h
 -
 moveit_msgs/DisplayTrajectory.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/moveit_msgs/DisplayTrajectory.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/moveit_msgs/DisplayTrajectory.h
 moveit_msgs/RobotTrajectory.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/moveit_msgs/RobotTrajectory.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/moveit_msgs/RobotTrajectory.h
 trajectory_msgs/JointTrajectory.h
-/home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_msgs/JointTrajectory.h
+/home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_msgs/JointTrajectory.h
 
 /opt/ros/melodic/include/actionlib/action_definition.h
 
