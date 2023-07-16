@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = '/home/joy/JAKA_WS/src'
+source_root_dir = '/home/joy/jaka_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/joy/JAKA_WS/devel;/home/joy/OCTOMAP_WS/devel;/opt/ros/melodic'.split(';') if '/home/joy/JAKA_WS/devel;/home/joy/OCTOMAP_WS/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/home/joy/octomap_ws/devel;/opt/ros/melodic'.split(';') if '/home/joy/octomap_ws/devel;/opt/ros/melodic' != '' else []

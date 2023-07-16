@@ -1,8 +1,8 @@
-# Install script for directory: /home/joy/JAKA_WS/src/jakazu7_moveit_test_config
+# Install script for directory: /home/joy/jaka_ws/src/jakazu7_moveit_test_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/joy/JAKA_WS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/joy/jaka_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,25 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/joy/JAKA_WS/build/jakazu7_moveit_test_config/catkin_generated/installspace/jakazu7_moveit_test_config.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/joy/jaka_ws/build/jakazu7_moveit_test_config/catkin_generated/installspace/jakazu7_moveit_test_config.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config/cmake" TYPE FILE FILES
-    "/home/joy/JAKA_WS/build/jakazu7_moveit_test_config/catkin_generated/installspace/jakazu7_moveit_test_configConfig.cmake"
-    "/home/joy/JAKA_WS/build/jakazu7_moveit_test_config/catkin_generated/installspace/jakazu7_moveit_test_configConfig-version.cmake"
+    "/home/joy/jaka_ws/build/jakazu7_moveit_test_config/catkin_generated/installspace/jakazu7_moveit_test_configConfig.cmake"
+    "/home/joy/jaka_ws/build/jakazu7_moveit_test_config/catkin_generated/installspace/jakazu7_moveit_test_configConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config" TYPE FILE FILES "/home/joy/JAKA_WS/src/jakazu7_moveit_test_config/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config" TYPE FILE FILES "/home/joy/jaka_ws/src/jakazu7_moveit_test_config/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config" TYPE DIRECTORY FILES "/home/joy/JAKA_WS/src/jakazu7_moveit_test_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config" TYPE DIRECTORY FILES "/home/joy/jaka_ws/src/jakazu7_moveit_test_config/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config" TYPE DIRECTORY FILES "/home/joy/JAKA_WS/src/jakazu7_moveit_test_config/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jakazu7_moveit_test_config" TYPE DIRECTORY FILES "/home/joy/jaka_ws/src/jakazu7_moveit_test_config/config")
 endif()
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"jaka_moveit_action\"
 
-CXX_INCLUDES = -I/home/joy/JAKA_WS/devel/include -I/home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/joy/JAKA_WS/src/jaka_moveit_action/src/libs -I/home/joy/JAKA_WS/src/jaka_moveit_action/src -isystem /opt/ros/melodic/include -isystem /usr/include/eigen3
+CXX_INCLUDES = -I/home/joy/jaka_ws/devel/include -I/home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/home/joy/jaka_ws/src/jaka_moveit_action/src/libs -I/home/joy/jaka_ws/src/jaka_moveit_action/src -isystem /opt/ros/melodic/include -isystem /usr/include/eigen3
 
 CXX_FLAGS = -std=c++11 -mfpmath=sse -msse -msse2 -msse3 -mssse3
 

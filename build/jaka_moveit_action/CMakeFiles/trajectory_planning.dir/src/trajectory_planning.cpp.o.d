@@ -1,5 +1,5 @@
 jaka_moveit_action/CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o: \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_planning.cpp \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_planning.cpp \
  /usr/include/stdc-predef.h /opt/ros/melodic/include/ros/ros.h \
  /opt/ros/melodic/include/ros/time.h \
  /opt/ros/melodic/include/ros/platform.h /usr/include/c++/7/stdlib.h \

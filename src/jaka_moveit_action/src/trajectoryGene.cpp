@@ -19,11 +19,12 @@
 
 const double pi = 3.141592653589793;
 const int sleepuTime = 8*1000;
-int moveStep=1;
+int moveStep=8;
 const std::vector<double> initJointValue={0.292701,1.513222,1.541136,1.659464,-1.568797,1.863675};
 ros::Publisher action_pub;
 ros::Publisher current_pose;
 ros::Publisher state_pub;
+ros::Publisher activeTrajPub;
 node* initNode=new node(0.292701,1.513222,1.541136,1.659464,-1.568797,1.863675);
 moveit_msgs::RobotTrajectory routine_traj_1;
 moveit_msgs::RobotTrajectory routine_traj_2;
@@ -89,15 +90,16 @@ public:
 		std::vector<vector<double>>goHomePath;
 		goHomePath.push_back(middle_pose);
 		moveit_msgs::RobotTrajectory go_homeTraj=trajGene(goHomePath);
-		// std::vector<double> current_joint_values = arm_->getCurrentJointValues();
-		// ROS_INFO("current joint values:%f,%f,%f,%f,%f,%f",current_joint_values[0],current_joint_values[1],current_joint_values[2],
-		// current_joint_values[3],current_joint_values[4],current_joint_values[5]);
-		// std::vector<double> middle_joint_value = initJointValue;
-		// arm_->setStartStateToCurrentState();
-		// arm_->setJointValueTarget(middle_joint_value);
-		// moveit::planning_interface::MoveGroupInterface::Plan plan_home;
-		// arm_->plan(plan_home);
-        single_execute(go_homeTraj,1);
+		std::vector<double> current_joint_values = arm_->getCurrentJointValues();
+		ROS_INFO("current joint values:%f,%f,%f,%f,%f,%f",current_joint_values[0],current_joint_values[1],current_joint_values[2],
+		current_joint_values[3],current_joint_values[4],current_joint_values[5]);
+		std::vector<double> middle_joint_value = initJointValue;
+		arm_->setStartStateToCurrentState();
+		arm_->setJointValueTarget(middle_joint_value);
+		moveit::planning_interface::MoveGroupInterface::Plan plan_home;
+		arm_->plan(plan_home);
+		single_execute(plan_home);
+        // single_execute(go_homeTraj,1);
 		ros::Duration(1.0).sleep();
 	}
 
@@ -332,6 +334,7 @@ int main(int argc, char** argv) {
     action_pub = nh.advertise<sensor_msgs::JointState>("robot_moveit_action", 10);
 	current_pose = nh.advertise<std_msgs::Empty>("/rviz/moveit/update_start_state", 10);
 	state_pub=nh.advertise<std_msgs::Int32>("/curState",10);
+	activeTrajPub=nh.advertise<std_msgs::Float64MultiArray>("/activeTraj",10);
 	ros::Subscriber safe_sub= nh.subscribe("/safe",1, safeCallback);
 	ros::Subscriber path_sub= nh.subscribe("/RRTpath",10, pathCallback);
 	ros::Subscriber speed_sub= nh.subscribe("/safe_status",1, speedCallback);
@@ -648,7 +651,7 @@ void single_execute(const moveit::planning_interface::MoveGroupInterface::Plan& 
 			}
 			cout<<endl;
 			robot.servo_j(&joint_goal, ABS,2);
-			usleep(sleepuTime*100); // unit: us
+			usleep(sleepuTime); // unit: us
 		}
 		
 		robot.get_joint_position(&joint_now);
@@ -733,6 +736,31 @@ void single_execute(const moveit_msgs::RobotTrajectory &myTraj, bool isSafeNode=
 			{
 				joint_goal.jVal[i] =myTraj.joint_trajectory.points[k].positions[i];
 			}
+			//发布轨迹消息
+			std_msgs::Float64MultiArray Trajs;
+			int wholesize=myTraj.joint_trajectory.points.size();
+			int jumpstep=wholesize/10;
+			if(jumpstep==0){
+				jumpstep=1;
+			}
+			int curProcess=k/jumpstep;
+			if(curProcess>7){
+				for(int sss=0;sss<10-curProcess;sss++){
+					for(int jointv=0;jointv<6;jointv++){
+						Trajs.data.push_back(myTraj.joint_trajectory.points[k+sss*jumpstep].positions[jointv]);
+					}	
+				}
+			}
+			else{
+				for(int sss=0;sss<3;sss++){
+					for(int jointv=0;jointv<6;jointv++){
+						Trajs.data.push_back(myTraj.joint_trajectory.points[k+sss*jumpstep].positions[jointv]);
+					}
+				}
+			}
+			cout<<"Traj size is"<<Trajs.data.size()<<endl;
+			activeTrajPub.publish(Trajs);
+
 			robot.servo_j(&joint_goal, ABS,2);
 			//ros::spinOnce();
 			spinOnceCount++;
@@ -792,7 +820,30 @@ void single_execute(const moveit_msgs::RobotTrajectory &myTraj, bool isSafeNode=
 				joint_goal.jVal[i] = myTraj.joint_trajectory.points[k].positions[i];
 				joint_states.position.push_back(joint_goal.jVal[i]);
 			}
-
+			//发布轨迹消息
+			std_msgs::Float64MultiArray Trajs;
+			int wholesize=myTraj.joint_trajectory.points.size();
+			int jumpstep=wholesize/10;
+			if(jumpstep==0){
+				jumpstep=1;
+			}
+			int curProcess=k/jumpstep;
+			if(curProcess>7){
+				for(int sss=0;sss<10-curProcess;sss++){
+					for(int jointv=0;jointv<6;jointv++){
+						Trajs.data.push_back(myTraj.joint_trajectory.points[k+sss*jumpstep].positions[jointv]);
+					}	
+				}
+			}
+			else{
+				for(int sss=0;sss<3;sss++){
+					for(int jointv=0;jointv<6;jointv++){
+						Trajs.data.push_back(myTraj.joint_trajectory.points[k+sss*jumpstep].positions[jointv]);
+					}
+				}
+			}
+			cout<<"Traj size is"<<Trajs.data.size()<<endl;
+			activeTrajPub.publish(Trajs);
 			action_pub.publish(joint_states);
 			spinOnceCount++;
 			if(spinOnceCount>25){
@@ -899,5 +950,16 @@ void pathCallback(const std_msgs::Float64MultiArray& msg){
 	receiveSafePath=true;
 }
 void speedCallback(const std_msgs::Int32 &msg){
-	moveStep=msg.data;
+	if(msg.data==3){
+		moveStep=8;
+		cout<<"full_speed!"<<endl;
+	}
+	else if(msg.data==2){
+		moveStep=4;
+		cout<<"middle_speed!"<<endl;
+	}
+	else if(msg.data==1){
+		moveStep=2;
+		cout<<"low_speed!"<<endl;
+	}
 }

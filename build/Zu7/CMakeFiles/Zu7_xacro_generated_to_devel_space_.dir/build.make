@@ -53,10 +53,10 @@ RM = /home/joy/Documents/cmake-3.21.4-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joy/JAKA_WS/src
+CMAKE_SOURCE_DIR = /home/joy/jaka_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joy/JAKA_WS/build
+CMAKE_BINARY_DIR = /home/joy/jaka_ws/build
 
 # Utility rule file for Zu7_xacro_generated_to_devel_space_.
 
@@ -74,10 +74,10 @@ Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/build: Zu7_xacro_generate
 .PHONY : Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/build
 
 Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/clean:
-	cd /home/joy/JAKA_WS/build/Zu7 && $(CMAKE_COMMAND) -P CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/cmake_clean.cmake
+	cd /home/joy/jaka_ws/build/Zu7 && $(CMAKE_COMMAND) -P CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/cmake_clean.cmake
 .PHONY : Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/clean
 
 Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/depend:
-	cd /home/joy/JAKA_WS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/JAKA_WS/src /home/joy/JAKA_WS/src/Zu7 /home/joy/JAKA_WS/build /home/joy/JAKA_WS/build/Zu7 /home/joy/JAKA_WS/build/Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joy/jaka_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/jaka_ws/src /home/joy/jaka_ws/src/Zu7 /home/joy/jaka_ws/build /home/joy/jaka_ws/build/Zu7 /home/joy/jaka_ws/build/Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Zu7/CMakeFiles/Zu7_xacro_generated_to_devel_space_.dir/depend
 

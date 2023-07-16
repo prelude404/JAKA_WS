@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/pathSearching"
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/pathSearching.pdb"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/pathSearching"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/pathSearching.pdb"
   "CMakeFiles/pathSearching.dir/src/RRT.cpp.o"
   "CMakeFiles/pathSearching.dir/src/RRT.cpp.o.d"
   "CMakeFiles/pathSearching.dir/src/pathSearching.cpp.o"

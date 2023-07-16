@@ -53,10 +53,10 @@ RM = /home/joy/Documents/cmake-3.21.4-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joy/JAKA_WS/src
+CMAKE_SOURCE_DIR = /home/joy/jaka_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joy/JAKA_WS/build
+CMAKE_BINARY_DIR = /home/joy/jaka_ws/build
 
 # Utility rule file for jaka_moveit_action_generate_messages_nodejs.
 
@@ -66,77 +66,77 @@ include jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodej
 # Include the progress variables for this target.
 include jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/progress.make
 
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js
-jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js
+jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerAction.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionResult.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionGoal.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionFeedback.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from jaka_moveit_action/jakacontrollerAction.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerAction.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerAction.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionResult.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionFeedback.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionGoal.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from jaka_moveit_action/jakacontrollerAction.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerAction.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionFeedback.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from jaka_moveit_action/jakacontrollerActionFeedback.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionFeedback.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionFeedback.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from jaka_moveit_action/jakacontrollerActionFeedback.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionFeedback.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionGoal.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from jaka_moveit_action/jakacontrollerActionGoal.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionGoal.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionGoal.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from jaka_moveit_action/jakacontrollerActionGoal.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionGoal.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionResult.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from jaka_moveit_action/jakacontrollerActionResult.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerActionResult.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionResult.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from jaka_moveit_action/jakacontrollerActionResult.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerActionResult.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from jaka_moveit_action/jakacontrollerFeedback.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from jaka_moveit_action/jakacontrollerFeedback.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerFeedback.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from jaka_moveit_action/jakacontrollerGoal.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from jaka_moveit_action/jakacontrollerGoal.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerGoal.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-/home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js: /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/JAKA_WS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from jaka_moveit_action/jakacontrollerResult.msg"
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg -Ijaka_moveit_action:/home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js: /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joy/jaka_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from jaka_moveit_action/jakacontrollerResult.msg"
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg -Ijaka_moveit_action:/home/joy/jaka_ws/devel/share/jaka_moveit_action/msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p jaka_moveit_action -o /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg
 
 jaka_moveit_action_generate_messages_nodejs: jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js
-jaka_moveit_action_generate_messages_nodejs: /home/joy/JAKA_WS/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerAction.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionFeedback.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionGoal.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerActionResult.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerFeedback.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerGoal.js
+jaka_moveit_action_generate_messages_nodejs: /home/joy/jaka_ws/devel/share/gennodejs/ros/jaka_moveit_action/msg/jakacontrollerResult.js
 jaka_moveit_action_generate_messages_nodejs: jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/build.make
 .PHONY : jaka_moveit_action_generate_messages_nodejs
 
@@ -145,10 +145,10 @@ jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/bu
 .PHONY : jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/build
 
 jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/clean:
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && $(CMAKE_COMMAND) -P CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && $(CMAKE_COMMAND) -P CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/clean
 
 jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/depend:
-	cd /home/joy/JAKA_WS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/JAKA_WS/src /home/joy/JAKA_WS/src/jaka_moveit_action /home/joy/JAKA_WS/build /home/joy/JAKA_WS/build/jaka_moveit_action /home/joy/JAKA_WS/build/jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joy/jaka_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/jaka_ws/src /home/joy/jaka_ws/src/jaka_moveit_action /home/joy/jaka_ws/build /home/joy/jaka_ws/build/jaka_moveit_action /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jaka_moveit_action/CMakeFiles/jaka_moveit_action_generate_messages_nodejs.dir/depend
 

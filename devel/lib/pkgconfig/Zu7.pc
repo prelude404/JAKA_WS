@@ -1,4 +1,4 @@
-prefix=/home/joy/JAKA_WS/devel
+prefix=/home/joy/jaka_ws/devel
 
 Name: Zu7
 Description: Description of Zu7

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/testFcl"
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/testFcl.pdb"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/testFcl"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/testFcl.pdb"
   "CMakeFiles/testFcl.dir/src/testFcl.cpp.o"
   "CMakeFiles/testFcl.dir/src/testFcl.cpp.o.d"
 )

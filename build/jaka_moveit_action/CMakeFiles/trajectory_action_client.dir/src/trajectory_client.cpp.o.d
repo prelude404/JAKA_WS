@@ -1,5 +1,5 @@
 jaka_moveit_action/CMakeFiles/trajectory_action_client.dir/src/trajectory_client.cpp.o: \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_client.cpp \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_client.cpp \
  /usr/include/stdc-predef.h /opt/ros/melodic/include/ros/ros.h \
  /opt/ros/melodic/include/ros/time.h \
  /opt/ros/melodic/include/ros/platform.h /usr/include/c++/7/stdlib.h \
@@ -1274,13 +1274,13 @@ jaka_moveit_action/CMakeFiles/trajectory_action_client.dir/src/trajectory_client
  /opt/ros/melodic/include/actionlib/client/connection_monitor.h \
  /opt/ros/melodic/include/actionlib/client/simple_goal_state.h \
  /opt/ros/melodic/include/actionlib/client/simple_client_goal_state.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerAction.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerActionGoal.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerGoal.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerActionResult.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerResult.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerActionFeedback.h \
- /home/joy/JAKA_WS/devel/include/jaka_moveit_action/jakacontrollerFeedback.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerAction.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerActionGoal.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerGoal.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerActionResult.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerResult.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerActionFeedback.h \
+ /home/joy/jaka_ws/devel/include/jaka_moveit_action/jakacontrollerFeedback.h \
  /opt/ros/melodic/include/moveit_msgs/DisplayTrajectory.h \
  /opt/ros/melodic/include/moveit_msgs/RobotTrajectory.h \
  /opt/ros/melodic/include/trajectory_msgs/MultiDOFJointTrajectory.h \
@@ -1303,9 +1303,9 @@ jaka_moveit_action/CMakeFiles/trajectory_action_client.dir/src/trajectory_client
  /opt/ros/melodic/include/shape_msgs/MeshTriangle.h \
  /opt/ros/melodic/include/shape_msgs/Plane.h \
  /opt/ros/melodic/include/std_msgs/Empty.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/robot.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/JAKAZuRobot.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jakaAPI.h
+ /home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/robot.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/JAKAZuRobot.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jakaAPI.h

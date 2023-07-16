@@ -1,8 +1,8 @@
-# Install script for directory: /home/joy/JAKA_WS/src/Zu7
+# Install script for directory: /home/joy/jaka_ws/src/Zu7
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/joy/JAKA_WS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/joy/jaka_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/joy/JAKA_WS/build/Zu7/catkin_generated/installspace/Zu7.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/joy/jaka_ws/build/Zu7/catkin_generated/installspace/Zu7.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Zu7/cmake" TYPE FILE FILES
-    "/home/joy/JAKA_WS/build/Zu7/catkin_generated/installspace/Zu7Config.cmake"
-    "/home/joy/JAKA_WS/build/Zu7/catkin_generated/installspace/Zu7Config-version.cmake"
+    "/home/joy/jaka_ws/build/Zu7/catkin_generated/installspace/Zu7Config.cmake"
+    "/home/joy/jaka_ws/build/Zu7/catkin_generated/installspace/Zu7Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Zu7" TYPE FILE FILES "/home/joy/JAKA_WS/src/Zu7/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Zu7" TYPE FILE FILES "/home/joy/jaka_ws/src/Zu7/package.xml")
 endif()
 

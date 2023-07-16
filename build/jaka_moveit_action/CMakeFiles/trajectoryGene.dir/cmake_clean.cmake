@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectoryGene"
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectoryGene.pdb"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectoryGene"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectoryGene.pdb"
   "CMakeFiles/trajectoryGene.dir/src/RRT.cpp.o"
   "CMakeFiles/trajectoryGene.dir/src/RRT.cpp.o.d"
   "CMakeFiles/trajectoryGene.dir/src/trajectoryGene.cpp.o"

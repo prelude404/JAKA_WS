@@ -1,5 +1,5 @@
 jaka_moveit_action/CMakeFiles/trajectory_display.dir/src/trajectory_display.cpp.o: \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectory_display.cpp \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/trajectory_display.cpp \
  /usr/include/stdc-predef.h /opt/ros/melodic/include/ros/ros.h \
  /opt/ros/melodic/include/ros/time.h \
  /opt/ros/melodic/include/ros/platform.h /usr/include/c++/7/stdlib.h \

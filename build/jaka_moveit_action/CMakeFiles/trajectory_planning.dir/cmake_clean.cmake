@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectory_planning"
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/trajectory_planning.pdb"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectory_planning"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/trajectory_planning.pdb"
   "CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o"
   "CMakeFiles/trajectory_planning.dir/src/trajectory_planning.cpp.o.d"
 )

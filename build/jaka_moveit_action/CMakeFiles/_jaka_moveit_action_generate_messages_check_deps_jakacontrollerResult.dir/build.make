@@ -53,10 +53,10 @@ RM = /home/joy/Documents/cmake-3.21.4-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joy/JAKA_WS/src
+CMAKE_SOURCE_DIR = /home/joy/jaka_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joy/JAKA_WS/build
+CMAKE_BINARY_DIR = /home/joy/jaka_ws/build
 
 # Utility rule file for _jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.
 
@@ -67,7 +67,7 @@ include jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_chec
 include jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/progress.make
 
 jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult:
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py jaka_moveit_action /home/joy/JAKA_WS/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg 
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py jaka_moveit_action /home/joy/jaka_ws/devel/share/jaka_moveit_action/msg/jakacontrollerResult.msg 
 
 _jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult: jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult
 _jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult: jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/build.make
@@ -78,10 +78,10 @@ jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_j
 .PHONY : jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/build
 
 jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/clean:
-	cd /home/joy/JAKA_WS/build/jaka_moveit_action && $(CMAKE_COMMAND) -P CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/cmake_clean.cmake
+	cd /home/joy/jaka_ws/build/jaka_moveit_action && $(CMAKE_COMMAND) -P CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/cmake_clean.cmake
 .PHONY : jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/clean
 
 jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/depend:
-	cd /home/joy/JAKA_WS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/JAKA_WS/src /home/joy/JAKA_WS/src/jaka_moveit_action /home/joy/JAKA_WS/build /home/joy/JAKA_WS/build/jaka_moveit_action /home/joy/JAKA_WS/build/jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joy/jaka_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/jaka_ws/src /home/joy/jaka_ws/src/jaka_moveit_action /home/joy/jaka_ws/build /home/joy/jaka_ws/build/jaka_moveit_action /home/joy/jaka_ws/build/jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : jaka_moveit_action/CMakeFiles/_jaka_moveit_action_generate_messages_check_deps_jakacontrollerResult.dir/depend
 

@@ -53,10 +53,10 @@ RM = /home/joy/Documents/cmake-3.21.4-linux-x86_64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joy/JAKA_WS/src
+CMAKE_SOURCE_DIR = /home/joy/jaka_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joy/JAKA_WS/build
+CMAKE_BINARY_DIR = /home/joy/jaka_ws/build
 
 # Utility rule file for run_tests.
 
@@ -78,6 +78,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/joy/JAKA_WS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/JAKA_WS/src /home/joy/JAKA_WS/src /home/joy/JAKA_WS/build /home/joy/JAKA_WS/build /home/joy/JAKA_WS/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joy/jaka_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joy/jaka_ws/src /home/joy/jaka_ws/src /home/joy/jaka_ws/build /home/joy/jaka_ws/build /home/joy/jaka_ws/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

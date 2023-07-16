@@ -1,5 +1,5 @@
 jaka_moveit_action/CMakeFiles/trajectoryGene.dir/src/trajectoryGene.cpp.o: \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/trajectoryGene.cpp \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/trajectoryGene.cpp \
  /usr/include/stdc-predef.h /opt/ros/melodic/include/ros/ros.h \
  /opt/ros/melodic/include/ros/time.h \
  /opt/ros/melodic/include/ros/platform.h /usr/include/c++/7/stdlib.h \
@@ -1748,7 +1748,7 @@ jaka_moveit_action/CMakeFiles/trajectoryGene.dir/src/trajectoryGene.cpp.o: \
  /opt/ros/melodic/include/std_msgs/MultiArrayLayout.h \
  /opt/ros/melodic/include/std_msgs/MultiArrayDimension.h \
  /opt/ros/melodic/include/std_msgs/Int32.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/RRT.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/RRT.h \
  /usr/local/include/fcl/fcl.h /usr/local/include/fcl/config.h \
  /usr/local/include/fcl/export.h \
  /usr/local/include/fcl/broadphase/broadphase_SSaP.h \
@@ -2132,7 +2132,7 @@ jaka_moveit_action/CMakeFiles/trajectoryGene.dir/src/trajectoryGene.cpp.o: \
  /usr/local/include/fcl/math/sampler/sampler_se3_quat-inl.h \
  /usr/local/include/fcl/math/sampler/sampler_se3_quat_ball.h \
  /usr/local/include/fcl/math/sampler/sampler_se3_quat_ball-inl.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/fcl/test/test_fcl_utility.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/fcl/test/test_fcl_utility.h \
  /opt/ros/melodic/include/moveit/robot_model_loader/robot_model_loader.h \
  /opt/ros/melodic/include/moveit/rdf_loader/rdf_loader.h \
  /opt/ros/melodic/include/moveit/kinematics_plugin_loader/kinematics_plugin_loader.h \
@@ -2151,9 +2151,9 @@ jaka_moveit_action/CMakeFiles/trajectoryGene.dir/src/trajectoryGene.cpp.o: \
  /opt/ros/melodic/include/rviz_visual_tools/remote_control.h \
  /opt/ros/melodic/include/sensor_msgs/Joy.h \
  /opt/ros/melodic/include/std_msgs/Empty.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/robot.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/JAKAZuRobot.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jkerr.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jktypes.h \
- /home/joy/JAKA_WS/src/jaka_moveit_action/src/libs/jakaAPI.h
+ /home/joy/jaka_ws/src/jaka_moveit_action/include/jaka_moveit_action/jaka_moveit.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/robot.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/JAKAZuRobot.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jkerr.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jktypes.h \
+ /home/joy/jaka_ws/src/jaka_moveit_action/src/libs/jakaAPI.h

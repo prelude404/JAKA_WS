@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/OctomapGene"
-  "/home/joy/JAKA_WS/devel/lib/jaka_moveit_action/OctomapGene.pdb"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/OctomapGene"
+  "/home/joy/jaka_ws/devel/lib/jaka_moveit_action/OctomapGene.pdb"
   "CMakeFiles/OctomapGene.dir/src/OctomapGene.cpp.o"
   "CMakeFiles/OctomapGene.dir/src/OctomapGene.cpp.o.d"
 )
